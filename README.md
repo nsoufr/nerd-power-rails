@@ -1,5 +1,7 @@
 # nerd-power-rails
 
+[![Build Status](https://travis-ci.org/nandosousafr/nerd-power-rails.png?branch=master)](https://travis-ci.org/nandosousafr/nerd-power-rails)
+
 Protótipo [SkyNerd] NerdPower em RubyOnRails
 
 Depedências:

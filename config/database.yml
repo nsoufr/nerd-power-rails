@@ -13,6 +13,6 @@ test:
   encoding: unicode
   database: nerdpower_test
   pool: 5
-  username: nerdpower
+  username: postgres
   password:
 
