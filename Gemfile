@@ -14,6 +14,25 @@ gem 'therubyracer'
 gem 'turbolinks'
 gem 'uglifier', '>= 1.3.0'
 
+
+group :development do
+  gem 'better_errors'
+  gem 'binding_of_caller'
+end
+
+
+group :test do
+  gem 'webmock'
+  gem 'shoulda-matchers'
+  gem 'rspec-rails', '~> 2.4'
+  gem 'capybara'
+  gem 'vcr'
+  gem 'factory_girl_rails', '~> 4.0'
+  gem 'database_cleaner'
+end
+
+
+
 group :doc do
   gem 'sdoc', require: false
 end
