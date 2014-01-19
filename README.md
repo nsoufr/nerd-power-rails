@@ -7,12 +7,13 @@ Protótipo [SkyNerd] NerdPower em RubyOnRails
 Depedências:
 
 * Postgres
+* Redis
 
 ## API
 
 ### Sistema de Alianças
 ```ruby
-  jovem_nerd = User.create name: 'Alexandre Allotoni'
+  jovem_nerd = User.create name: 'Alexandre Ottoni'
   azaghal = User.create name: 'Dave Pazos'
 
   jovem_nerd.send_invitation_to azaghal
@@ -23,7 +24,18 @@ Depedências:
 
   # último convite recebido em aberto do Azagual
   azaghal.inbox_invitations.last.sender.name
-  # => "Alexandre Allotoni"
+  # => "Alexandre Ottoni"
+
+  # o Rei da Oceania aceita o convite
+  azaghal.inbox_invitations.last.confirm!
+
+  # amigos do azaghal
+  azaghal.friends.pluck :name
+  # => ["Alexandre Ottoni"]
+
+  # amigos do jovem nerd
+  jovem_nerd.friends.pluck :name
+  # => ["Dave Pazos"]
 
 
 ```
