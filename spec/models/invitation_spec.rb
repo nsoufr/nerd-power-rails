@@ -11,16 +11,11 @@ describe Invitation do
   let(:invitation) { FactoryGirl.create :invitation }
   subject { invitation}
 
-  describe "#confirm!" do
-    before { subject.confirm! }
-
-    it { expect(subject.sender).to be_friend_of subject.receiver }
-
-    it { expect(subject.sender.friends).to include subject.receiver }
-    it { expect(subject.receiver.friends).to include subject.sender }
-
-    it { expect{ subject.reload }.to raise_error ActiveRecord::RecordNotFound }
-
+  it  "#confirm!" do
+    subject.confirm!
+    expect(subject.sender.friends).to include subject.receiver
+    expect(subject.receiver.friends).to include subject.sender
+    expect{subject.reload }.to raise_error ActiveRecord::RecordNotFound
   end
 end
 

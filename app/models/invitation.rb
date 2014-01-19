@@ -6,6 +6,6 @@ class Invitation < ActiveRecord::Base
   validates_uniqueness_of :receiver_id, scope: [:sender_id]
 
   def confirm!
-    destroy!
+    destroy! if receiver.add_friend!(sender) == [true, true]
   end
 end
