@@ -4,3 +4,6 @@ rvm:
 
 before_script:
   - psql -c 'create database nerdpower_test;' -U postgres
+
+services:
+  - redis-server
