@@ -7,3 +7,6 @@ before_script:
 
 services:
   - redis-server
+
+env:
+  - REDIS_URL: http://localhost:6379
