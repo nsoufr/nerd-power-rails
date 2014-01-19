@@ -10,7 +10,7 @@ class User
     end
 
     def friends
-      User.find storage.smembers key
+      User.where id: storage.smembers(key)
     end
 
     def friend_of?(user)
