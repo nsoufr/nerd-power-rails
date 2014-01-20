@@ -37,8 +37,12 @@ Depedências:
   # amigos do jovem nerd
   jovem_nerd.friends.pluck :name
   # => ["Dave Pazos"]
-
-
 ```
+
+## Contribuições
+
+1. Faça um Fork;
+2. Adicione sua feature ou correção de bug;
+3. Envie um pull request no GitHub.
 
 
