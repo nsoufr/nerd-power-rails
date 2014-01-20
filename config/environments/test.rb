@@ -33,4 +33,6 @@ Nerdpower::Application.configure do
 
   # Print deprecation notices to the stderr.
   config.active_support.deprecation = :stderr
+
+  ENV['REDIS_URL'] ||= 'http://localhost:6379'
 end
