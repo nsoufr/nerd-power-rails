@@ -1,0 +1,28 @@
+<%= render 'info' %>
+
+<div class="row col-lg-3 layout-left-column">
+  <div class="features row col-lg-12">
+    <ul class="nav nav-pills nav-stacked">
+      <li class="active">
+        <%= link_to do %>
+          <span class="badge pull-right">42</span>
+          Mensagens
+        <% end %>
+      </li>
+      <li>
+        <%= link_to do %>
+          <span class="badge pull-right">1</span>
+          Solicitações
+        <% end %>
+      </li>
+    </ul>
+  </div> <!-- .features -->
+
+
+  <div class="friends row col-lg-12">
+    <h3> Alianças </h3>
+    <ul>
+      <li> <%= link_to '@moysesspj' %> </li>
+    </ul>
+  </div> <!-- .friends -->
+</div> <!-- .layout-left-column -->
