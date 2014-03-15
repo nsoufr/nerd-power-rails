@@ -1,9 +1,23 @@
-<div class="media">
-  <a class="pull-left" href="#">
-    <%= image_tag "http://www.gravatar.com/avatar/1703ab65a84c2d8d5f286f1c8e336d92", class: "img-rounded media-object"%>
-  </a>
-  <div class="media-body">
-    <textarea class="form-control" rows="2"></textarea>
-    <button type="button" class="btn btn-primary btn-sm pull-right">Publicar</button>
-  </div>
-</div>
+<div id="feed" data-ng-controller="feedCtrl">
+  <div class="media">
+    <div class="media-body">
+
+      <form data-ng-submit="createPost()">
+        <textarea data-ng-model= "content" class="form-control" rows="2" required></textarea><br/>
+        <button type="submit" class="btn btn-primary btn-sm pull-right">Publicar</button>
+      </form>
+
+    </div> <!-- .media-body -->
+  </div> <!-- .media -->
+
+  <div class="posts" data-ng-repeat="post in posts">
+    <div class="post col-md-12">
+      <%= link_to 'javascript:void(0)', class: 'pull-left' do %>
+        <%= image_tag "http://www.gravatar.com/avatar/1703ab65a84c2d8d5f286f1c8e336d92", class: "img-rounded media-object" %>
+      <% end %>
+      <p data-ng-bind="post.content"> </p>
+    </div> <!-- post -->
+
+  </div> <!-- .posts -->
+
+</div> <!-- #feed -->

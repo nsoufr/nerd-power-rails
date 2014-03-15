@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'angularjs-rails'
 gem 'bootstrap-sass-rails'
 gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
@@ -21,7 +22,6 @@ group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
 end
-
 
 group :test do
   gem 'webmock'
