@@ -17,6 +17,10 @@ class User
       storage.sismember key, user.id
     end
 
+    def send_invitation_to(user)
+      pendent_invitations.create!(receiver: user)
+    end
+
     private
     def key(user_id = id)
       "user:#{user_id}"
