@@ -1,4 +1,5 @@
 Nerdpower::Application.routes.draw do
+  devise_for :users
   root 'home#index'
 
   scope :user do

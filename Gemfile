@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'angularjs-rails'
 gem 'bootstrap-sass-rails'
+gem 'devise'
 gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 gem 'jbuilder', '~> 1.2'

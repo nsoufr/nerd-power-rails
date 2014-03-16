@@ -15,7 +15,7 @@ describe Invitation do
     subject.confirm!
     expect(subject.sender.friends).to include subject.receiver
     expect(subject.receiver.friends).to include subject.sender
-    expect{subject.reload }.to raise_error ActiveRecord::RecordNotFound
+    expect { subject.reload }.to raise_error ActiveRecord::RecordNotFound
   end
 end
 
