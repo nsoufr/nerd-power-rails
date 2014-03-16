@@ -5,7 +5,7 @@ Nerdpower::Application.routes.draw do
   authenticate :user do
     scope :user do
       get '/' => 'user#index',          as: :user_feed
-      get '/profile' => 'user#profile', as: :user_profile
+      get '/profile/:nickname' => 'user#profile', as: :user_profile
     end
   end
 end

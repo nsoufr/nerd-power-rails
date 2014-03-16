@@ -1,4 +1,5 @@
 class UserController < ApplicationController
-  def index
+  def profile
+    @user = User.find_by!(nickname: params[:nickname])
   end
 end
