@@ -17,4 +17,8 @@ class User < ActiveRecord::Base
     hash = Digest::MD5.hexdigest(email)
     "http://www.gravatar.com/avatar/#{hash}?s=#{size}&d=identicon&r=G"
   end
+
+  def public_nickname
+    "@#{nickname}"
+  end
 end

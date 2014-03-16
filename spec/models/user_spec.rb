@@ -7,4 +7,10 @@ describe User do
   it { should validate_presence_of :nickname  }
   it { should validate_uniqueness_of :nickname}
   it { should validate_presence_of :name      }
+
+  let(:user) { FactoryGirl.create :user }
+  subject { user }
+
+  its(:public_nickname) { should eql "@#{user.nickname}" }
+
 end
