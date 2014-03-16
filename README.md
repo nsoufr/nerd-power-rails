@@ -10,6 +10,29 @@ Depedências:
 * Postgres
 * Redis
 
+## Escopo inicial
+* Usuário poderá fazer alianças com outros usuários;
+* Usuário poderá fazer publicações (somente em texto a princípio);
+* Usuário poderá buscar conteúdo na rede;
+
+## Próxima etapa
+* Usuário poderá trocar mensagens com outros usuários em realtime;
+* Usuário poderá anexar imagens a publicação;
+* Usuário poderá anexar links a publicação;
+
+
+## Idéias
+* Usuário poderá ouvir, comentar, curtir podcasts através da rede;
+* Usuário poderá anexar filmes a publicação de forma semântica;
+
+## Idéias de monetização
+* A rede poderá intermediar compra/venda/troca de artigos
+(quadrinhos, games, etc..) nerds entre os usuários;
+
+## Tratado Nerd
+* Garantir privacidade do nerd;
+* Não inundar a rede de anúncios de publicidade;
+
 ## API
 
 ### Sistema de Alianças
@@ -40,6 +63,9 @@ Depedências:
 ```
 
 ## Contribuições
+
+Antes de colaborar esteja certo que você está seguindo estas
+[guidelines](http://guidelines.plataformatec.com.br).
 
 1. Faça um Fork;
 2. Adicione sua feature ou correção de bug;
