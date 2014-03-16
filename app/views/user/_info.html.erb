@@ -1,8 +1,8 @@
-<%= image_tag "http://www.gravatar.com/avatar/1703ab65a84c2d8d5f286f1c8e336d92?s=263&d=identicon&r=G", class: "img-rounded img-responsive"%>
+<%= image_tag current_user.avatar(263), class: 'img-rounded img-responsive' %>
 
 <h2>
-    <b>Nando Sousa</b>
-    <br />
-    <small>@nandosousafr</small>
+  <b> <%= current_user.name %> </b>
+  <br />
+  <small> @nickname </small>
 </h2>
 
