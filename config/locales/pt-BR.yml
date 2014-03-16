@@ -1,0 +1,16 @@
+pt-BR:
+  activerecord:
+    attributes:
+      user:
+        name: "Nome"
+        password: "Senha"
+        nickname: "Nome de usuário"
+
+  helpers:
+    label:
+      user:
+        password_confirmation: "Confirme a senha"
+
+    submit:
+      create: "Criar"
+      update: "Modificar"
