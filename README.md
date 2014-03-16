@@ -5,10 +5,8 @@
 
 Protótipo [SkyNerd] NerdPower em RubyOnRails
 
-Depedências:
-
-* Postgres
-* Redis
+## Preview
+[nerdpower.herokuapp.com](http://nerdpower.herokuapp.com/user)
 
 ## Escopo inicial
 * Usuário poderá fazer alianças com outros usuários;
@@ -63,6 +61,10 @@ Depedências:
 ```
 
 ## Contribuições
+
+Banco de dados:
+* Postgres
+* Redis
 
 Antes de colaborar esteja certo que você está seguindo estas
 [guidelines](http://guidelines.plataformatec.com.br).
