@@ -12,6 +12,8 @@ class User < ActiveRecord::Base
 
   validates_presence_of :nickname, :name
   validates_uniqueness_of :nickname
+  validates_format_of :email, with: /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\Z/
+  validates_format_of :nickname, with: /\A[a-z0-9][a-z0-9_]*\Z/
 
   def avatar(size = 70)
     hash = Digest::MD5.hexdigest(email)
