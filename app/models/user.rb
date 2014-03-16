@@ -10,6 +10,9 @@ class User < ActiveRecord::Base
   has_many :inbox_invitations, class_name: 'Invitation', foreign_key: :receiver_id
   has_many :posts
 
+  validates_presence_of :nickname, :name
+  validates_uniqueness_of :nickname
+
   def avatar(size = 70)
     hash = Digest::MD5.hexdigest(email)
     "http://www.gravatar.com/avatar/#{hash}?s=#{size}&d=identicon&r=G"
