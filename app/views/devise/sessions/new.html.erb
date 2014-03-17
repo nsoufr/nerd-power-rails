@@ -1,17 +1,68 @@
-<h2>Sign in</h2>
+<div class="row">
+  <div class="col-md-8 visible-md visible-lg">
+    <span class="fa-stack fa-lg fa-3x pull-left" style="margin-top: 15px; margin-right: 15px;">
+      <i class="fa fa-circle fa-stack-2x"></i>
+      <i class="fa fa-eye fa-stack-1x fa-inverse"></i>
+    </span>
 
-<%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
-  <div><%= f.label :email %><br />
-  <%= f.email_field :email, :autofocus => true %></div>
+    <h3>
+      <b>Privacidade em primeiro lugar</b>
+    </h3>
+    <p>Nos comprometemos com a segurança de cada usuário cadastrado, com a proteção de sua privacidade e mecanismos simples para lhe dar escolhas e controle.</p>
+  
+    <br />
+    
+    <span class="fa-stack fa-lg fa-3x pull-left" style="margin-top: 15px; margin-right: 15px;">
+      <i class="fa fa-circle fa-stack-2x"></i>
+      <i class="fa fa-money fa-stack-1x fa-inverse"></i>
+    </span>
 
-  <div><%= f.label :password %><br />
-  <%= f.password_field :password %></div>
+    <h3>
+      <b>É gratuito e sempre será</b>
+    </h3>
+    <p>Vamos oferecer a nosso usuário a melhorar experiência social sem nenhum custo de acesso.</p>
+    <br />
 
-  <% if devise_mapping.rememberable? -%>
-    <div><%= f.check_box :remember_me %> <%= f.label :remember_me %></div>
-  <% end -%>
+    <span class="fa-stack fa-lg fa-3x pull-left" style="margin-top: 15px; margin-right: 15px;">
+      <i class="fa fa-circle fa-stack-2x"></i>
+      <i class="fa fa-bullhorn fa-stack-1x fa-inverse"></i>
+    </span>
 
-  <div><%= f.submit "Sign in" %></div>
-<% end %>
+    <h3>
+      <b>Nada de anúncio em excesso</b>
+    </h3>
+    <p>Também acreditamos que tudo que é demais faz mal. Desta forma nunca inundaremos seu feed com anúncios.</p>
+  </div>
 
-<%= render "devise/shared/links" %>
+  <div class="col-md-4">
+    <br />
+    
+    <div class="well">
+      <h2>
+        <b>Entrar</b>
+      </h2>
+
+      <%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
+
+        <%= f.email_field :email, class: "form-control", placeholder: "E-Mail", autofocus: true %>
+
+        <br />
+
+        <%= f.password_field :password, class: "form-control", placeholder: "Senha" %>
+
+        <br />
+
+        <% if devise_mapping.rememberable? -%>
+          <%= f.check_box :remember_me %> Lembrar-me
+        <% end -%>
+
+        <%= f.submit "Entrar", class: "btn btn-primary pull-right" %>
+      <% end %>
+
+      <br />
+
+      <%= render "devise/shared/links" %>
+    </div>
+  </div>
+</div>
+
