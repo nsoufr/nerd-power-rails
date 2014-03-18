@@ -23,12 +23,17 @@
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <%= content_tag :li do %>
-              <%= link_to 'Nerd Feed', user_feed_path %>
+              <%= link_to 'Nerd Feed', user_feed_path if user_signed_in? %>
             <% end %>
 
             <%= content_tag :li do %>
               <%= link_to 'Nerd Profile', user_profile_path(nickname: current_user.nickname) if user_signed_in? %>
             <% end %>
+          </ul>
+          <ul class="nav navbar-nav pull-right">  
+            <%= content_tag :li do %>
+              <%= link_to_session if user_signed_in? %>
+            <% end -%>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
