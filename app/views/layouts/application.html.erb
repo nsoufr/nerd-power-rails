@@ -3,7 +3,6 @@
   <head>
     <title>Nerdpower</title>
     <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
     <%= csrf_meta_tags %>
   </head>
   <body>
@@ -39,8 +38,8 @@
       </div>
     </div>
     <div class="container">
-      <%= yield %>
-
+      <div ng-view></div>
+      
       <hr class="visible-md visible-lg" />
       <footer class="visible-md visible-lg">
         <div class="pull-left">
@@ -50,6 +49,8 @@
           Fork us on <a href="http://github.com/nandosousafr/nerd-power-rails"> <i class="fa fa-github-alt"></i> GitHub</a>
         </div>
       </footer>
+      <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular-route.js"></script>
     </div>
   </div>
   </body>
