@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Nerdpower::Application.config.secret_key_base = 'ec80e28d826130f7e4f17ba9f3e6985b4d9caf7340d2a8b8b5b16b40f1a372cb23c0124e3941982716fad6d926e8a7b5f5479097fa51818d07e796c8a5bc5454'
+Nerdpower::Application.config.secret_key_base = ''
