@@ -31,6 +31,14 @@ Protótipo [SkyNerd] NerdPower em RubyOnRails
 * Garantir privacidade do nerd;
 * Não inundar a rede de anúncios de publicidade;
 
+## Segurança
+
+### Mudanças
+* Algumas mudanças foram feitas use o comando ``` git pull origin ``` ou ``` git pull origin master ``` para atudalizar o seu repositório
+
+### Secret_token
+* Para rodar a aplicação e necessário um secret_toke use o comando ``` rake secret ```
+
 ## API
 
 ### Sistema de Alianças

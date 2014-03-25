@@ -1,2 +1,8 @@
-var socialNerd = angular.module('socialNerd', [])
-var controllers = {}
+var socialNerd = angular.module('socialNerd', ['ngRoute'])
+socialNerd.config(function ($routeProvider) {
+	$routeProvider
+		.when('/', {
+	    templateUrl: '/user',
+	    controller: 'UserController'
+	 	})
+});

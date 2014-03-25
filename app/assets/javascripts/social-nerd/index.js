@@ -1,3 +1,3 @@
 //= require ./app
 //= require ./initializer
-//= require ./controllers/feed
+//= require ./controllers/UserController

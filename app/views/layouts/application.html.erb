@@ -3,7 +3,6 @@
   <head>
     <title>Nerdpower</title>
     <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
     <%= csrf_meta_tags %>
   </head>
   <body>
@@ -23,18 +22,35 @@
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <%= content_tag :li do %>
-              <%= link_to 'Nerd Feed', user_feed_path %>
+              <%= link_to 'Nerd Feed', user_feed_path if user_signed_in? %>
             <% end %>
 
             <%= content_tag :li do %>
               <%= link_to 'Nerd Profile', user_profile_path(nickname: current_user.nickname) if user_signed_in? %>
             <% end %>
           </ul>
+          <ul class="nav navbar-nav pull-right">  
+            <%= content_tag :li do %>
+              <%= link_to_session if user_signed_in? %>
+            <% end -%>
+          </ul>
         </div><!--/.nav-collapse -->
       </div>
     </div>
     <div class="container">
-      <%= yield %>
+      <div ng-view></div>
+      
+      <hr class="visible-md visible-lg" />
+      <footer class="visible-md visible-lg">
+        <div class="pull-left">
+          <i class="fa fa-code fa-lg"></i> with <i class="fa fa-heart"></i> by <a href="http://www.twitter.com/nandosousafr">@nandosousarf</a> and <a href="http://www.twitter.com/nandosousafr">@ofabriciojr</a>
+        </div>
+        <div class="pull-right">
+          Fork us on <a href="http://github.com/nandosousafr/nerd-power-rails"> <i class="fa fa-github-alt"></i> GitHub</a>
+        </div>
+      </footer>
+      <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular-route.js"></script>
     </div>
   </div>
   </body>
