@@ -17,6 +17,7 @@ Social Network for nerds and geeks.
 - [ ] Settings page;
 - [ ] Followers page;
 - [ ] Following page;
+- [ ] Mobile friendly website;
 
 
 ## Want to contribute young padawan?
