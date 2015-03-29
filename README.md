@@ -15,6 +15,7 @@ wip
 - [ ] Settings page;
 - [ ] Followers page;
 - [ ] Following page;
+- [ ] Mobile friendly website;
 
 
 ## Want to contribute young padawan?
