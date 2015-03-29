@@ -3,7 +3,9 @@
 Social Network for nerds and geeks.
 
 ## How to run this project?
-wip
+1 - `$ bundle exec rake db:setup`
+2 - `$ foreman start`
+3 - Go to `localhost:3000`
 
 ## MVP Features
 - [ ] Twitter-like following system;
