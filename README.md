@@ -22,5 +22,5 @@ Social Network for nerds and geeks.
 
 ## Want to contribute young padawan?
 - See [Product Backlog](https://trello.com/b/ffyjnJXC/grokspot-io) and go ahead;
-- Report a bug? [Submit an issue](https://github.com/nandosousafr/nerd-power-rails/issues)
+- Found a bug? [Submit an issue](https://github.com/nandosousafr/nerd-power-rails/issues)
 
