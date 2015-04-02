@@ -2,6 +2,7 @@
 [![Build Status](https://travis-ci.org/nandosousafr/nerd-power-rails.svg?branch=master)](https://travis-ci.org/nandosousafr/nerd-power-rails)
 [![Code Climate](https://codeclimate.com/github/nandosousafr/nerd-power-rails/badges/gpa.svg)](https://codeclimate.com/github/nandosousafr/nerd-power-rails)
 [![Test Coverage](https://codeclimate.com/github/nandosousafr/nerd-power-rails/badges/coverage.svg)](https://codeclimate.com/github/nandosousafr/nerd-power-rails)
+[![Dependency Status](https://gemnasium.com/nandosousafr/nerd-power-rails.svg)](https://gemnasium.com/nandosousafr/nerd-power-rails)
 
 Social Network for nerds and geeks.
 
