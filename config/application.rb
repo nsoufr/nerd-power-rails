@@ -20,6 +20,22 @@ module Grokspot
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
 
+    # Do not generate specs for views and requests. Also, do not generate assets.
+    config.generators do |g|
+      g.helper false
+      g.view_specs false
+      g.assets false
+      g.integration_tool false
+    end
+
+    config.app_generators do |g|
+      g.test_framework :rspec
+    end
+
+    # Prevent initializing your application and connect to the database on assets precompile.
+    config.assets.initialize_on_precompile = false
+
+
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
   end
