@@ -1,4 +1,5 @@
 # Grokspot.io
+[![Build Status](https://travis-ci.org/nandosousafr/nerd-power-rails.svg?branch=master)](https://travis-ci.org/nandosousafr/nerd-power-rails)
 
 Social Network for nerds and geeks.
 
