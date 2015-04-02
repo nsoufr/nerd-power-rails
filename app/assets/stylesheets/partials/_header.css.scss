@@ -1,0 +1,16 @@
+nav.navbar {
+  background-color: $primary-color;
+  color: #fff;
+
+  .container {
+    padding: 1em 0 1em 0
+  }
+
+  h1#logo {
+    font-size: 1.5em;
+    line-height: 1.4;
+    letter-spacing: 0;
+  }
+}
+
+

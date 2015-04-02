@@ -1,5 +1,8 @@
 // More info: http://thesassway.com/beginner/how-to-structure-a-sass-project
 
-// Third Parties
+// CSS Framework
 @import 'skeleton/css/normalize';
 @import 'skeleton/css/skeleton';
+
+@import 'partials/base';
+@import 'partials/header';
