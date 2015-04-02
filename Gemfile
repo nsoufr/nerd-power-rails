@@ -21,10 +21,12 @@ group :development, :test do
 end
 
 group :test do
+  gem 'simplecov',            '0.9.2', require: false
   gem 'capybara',             '2.4.4'
   gem 'capybara-webkit',      '1.5.0'
   gem 'database_cleaner',     '1.4.1'
   gem 'launchy',              '2.4.3'
   gem 'shoulda-matchers',     '2.8.0'
   gem 'webmock',              '1.21.0'
+  gem 'codeclimate-test-reporter', require: nil
 end

@@ -1,3 +1,8 @@
 language: ruby
 rvm:
   - 2.2.0
+before_script:
+  - psql -c 'create database grokspot_test;' -U postgres
+
+script: CODECLIMATE_REPO_TOKEN=a2d4a18dba62c80040d47d14a96c864045228040f7430722fdfe2a0b12df37d0 coverage=on bundle exec rspec
+

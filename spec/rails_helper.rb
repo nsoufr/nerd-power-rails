@@ -1,10 +1,12 @@
 ENV['RAILS_ENV'] ||= "test"
 
+require "codeclimate-test-reporter"
 require 'rails_helper'
 require 'config/environment'
 require 'rspec/rails'
 
 ActiveRecord::Migration.maintain_test_schema!
+CodeClimate::TestReporter.start
 
 RSpec.configure do |config|
   config.before do
