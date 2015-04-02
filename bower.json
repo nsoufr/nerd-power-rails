@@ -1,0 +1,19 @@
+{
+  "name": "grokspot",
+  "version": "0.0.0",
+  "homepage": "https://github.com/nandosousafr/nerd-power-rails",
+  "authors": [
+    "Nando Sousa <nandosousafr@gmail.com>"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "skeleton": "2.0.4"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

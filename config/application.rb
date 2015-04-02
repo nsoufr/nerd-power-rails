@@ -35,6 +35,8 @@ module Grokspot
     # Prevent initializing your application and connect to the database on assets precompile.
     config.assets.initialize_on_precompile = false
 
+    # Supports bower
+    config.assets.append_path 'components'
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
