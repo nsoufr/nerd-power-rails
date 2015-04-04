@@ -1,10 +1,27 @@
-.container
-  .row
-    .card-new-post
-      textarea.u-full-width placeholder="Write something..."
-    .buttons
-      .action-button.one.column
-        input.button value='Preview'
-      .action-button.six.columns
-        input.button.button-primary value='Publish'
+.row.section
+  .col-sm-12.col-xs-12
+    form
+      .form-group
+        textarea.form-control placeholder="Write something..."
+
+  .col-sm-12.col-xs-12.text-right
+    .btn-group role="group"
+      a.btn.btn-default href="javascript:void(0)" Preview
+      a.btn.btn-success href="javascript:void(0)" Publish
+
+.row.section
+  .posts-wrapper.col-sm-12.col-xs-12
+    - (0..3).each do 
+      .post-cards.col-xs-12
+        .post-header
+          .user-info
+            .avatar.col-xs-3
+              img.img-responsive.img-circle src="http://graph.facebook.com/nandosousafr/picture"
+            .name
+              span Nando Sousa
+        .post-body.col-xs-12
+          We are part of this universe; we are in this universe, but perhaps more 
+          important than both of those facts, is that the universe is in us. 
+          Neil DeGrasse Tyson. #cosmos #universe #truth
+
 
