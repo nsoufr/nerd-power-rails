@@ -4,5 +4,11 @@
 @import 'skeleton/css/normalize';
 @import 'skeleton/css/skeleton';
 
+// variables, base styles etc
 @import 'partials/base';
+
+//@import 'partials/desktop';
+//@import 'partials/tablet';
+@import 'partials/smartphone';
+
 @import 'partials/header';
