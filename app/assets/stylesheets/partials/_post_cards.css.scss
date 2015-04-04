@@ -7,7 +7,12 @@
     margin-bottom: 2.5em;
   }
 
-  .post-body {
+  .post-body, .post-insights > a {
     font-size: 0.89em;
+  }
+
+  .post-insights > a {
+    color: #EB8638;
+    padding-left: 0.5em;
   }
 }
