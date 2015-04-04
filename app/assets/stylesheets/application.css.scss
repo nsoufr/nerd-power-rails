@@ -1,11 +1,10 @@
 // More info: http://thesassway.com/beginner/how-to-structure-a-sass-project
 
-// variables, base styles etc
-@import 'HTML5-Reset/assets/css/reset';
-@import 'partials/base';
+// CSS Framework
+@import 'bootstrap-sass/assets/stylesheets/bootstrap';
 
-//@import 'partials/desktop';
-//@import 'partials/tablet';
-@import 'partials/smartphone';
+// variables and mixins
+@import 'partials/variables';
 
+// layout
 @import 'partials/header';

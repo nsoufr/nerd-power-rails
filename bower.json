@@ -7,7 +7,8 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "HTML5-Reset": "2.1.2"
+    "HTML5-Reset": "2.1.2",
+    "bootstrap-sass": "3.3.4"
   },
   "ignore": [
     "**/.*",
