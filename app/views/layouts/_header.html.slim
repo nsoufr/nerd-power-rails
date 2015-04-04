@@ -1,4 +1,18 @@
-.navbar-spacer
-nav.navbar
+header.navbar role="banner"
   .container
-    h1#logo Grokspot.io
+    .nav-header
+      button.navbar-toggle type="button" data-toggle="collapse" data-target=".navbar-collapse"
+        span.sr-only Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      a.navbar-brand href="/" grokspot.io
+    nav.collapse.navbar-collapse
+      ul.nav.navbar-nav.visible-xs
+        li= link_to 'Me'
+        li= link_to 'Feed'
+        li= link_to 'Messages'
+        li= link_to 'Podcast'
+        li= link_to 'Discover'
+
+

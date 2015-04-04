@@ -1,10 +1,10 @@
 // More info: http://thesassway.com/beginner/how-to-structure-a-sass-project
 
-// CSS Framework
-@import 'bootstrap-sass/assets/stylesheets/bootstrap';
-
 // variables and mixins
 @import 'partials/variables';
 
 // layout
 @import 'partials/header';
+
+// Third Party
+@import 'partials/bootstrap'
