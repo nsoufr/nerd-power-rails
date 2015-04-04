@@ -7,7 +7,7 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "skeleton": "2.0.4"
+    "HTML5-Reset": "2.1.2"
   },
   "ignore": [
     "**/.*",

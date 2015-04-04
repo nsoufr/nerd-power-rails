@@ -1,10 +1,7 @@
 // More info: http://thesassway.com/beginner/how-to-structure-a-sass-project
 
-// CSS Framework
-@import 'skeleton/css/normalize';
-@import 'skeleton/css/skeleton';
-
 // variables, base styles etc
+@import 'HTML5-Reset/assets/css/reset';
 @import 'partials/base';
 
 //@import 'partials/desktop';
