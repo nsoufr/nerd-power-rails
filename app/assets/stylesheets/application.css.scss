@@ -1,0 +1,15 @@
+// More info: http://thesassway.com/beginner/how-to-structure-a-sass-project
+
+// variables and mixins
+@import 'partials/base';
+
+// layout
+@import 'partials/header';
+
+// Components
+@import 'partials/post_cards';
+
+// Third Party
+$icon-font-path: "bootstrap-sass/assets/fonts/bootstrap/";
+@import "bootstrap-sass/assets/stylesheets/bootstrap-sprockets";
+@import "bootstrap-sass/assets/stylesheets/bootstrap";

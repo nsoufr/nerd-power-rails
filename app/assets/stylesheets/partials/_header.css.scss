@@ -1,0 +1,20 @@
+header.navbar {
+  background-color: #232120;
+  border-radius: 0;
+
+  ul.navbar-nav li a, .nav-header a {
+    color: #f8f8f8;
+  }
+
+  ul.navbar-nav li a:hover {
+    background-color: black;
+  }
+
+  .navbar-toggle .icon-bar {
+    background-color: #fff;
+  }
+
+  .navbar-collapse {
+    width: 100%;
+  }
+}
