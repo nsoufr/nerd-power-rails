@@ -10,6 +10,10 @@ gem 'puma',                   '2.11.1'
 gem 'sdoc',                   '~> 0.4.0', group: :doc
 gem 'slim-rails',             '3.0.1'
 
+group :production do
+  gem 'rails_12factor',       '0.0.3'
+end
+
 group :development, :test do
   gem 'rspec-rails',          '3.2.1'
   gem 'dotenv-rails',         '2.0.0'

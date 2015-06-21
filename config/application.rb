@@ -43,7 +43,8 @@ module Grokspot
     # Precompile Bootstrap fonts
     config.assets.precompile << %r(bootstrap-sass/assets/fonts/bootstrap/[\w-]+\.(?:eot|svg|ttf|woff2?)$)
     # Minimum Sass number precision required by bootstrap-sass
-    ::Sass::Script::Value::Number.precision = [8, ::Sass::Script::Value::Number.precision].max    config.assets.append_path 'components/bootstrap-sass/assets'
+    ::Sass::Script::Value::Number.precision = [8, ::Sass::Script::Value::Number.precision].max
+    config.assets.append_path 'components/bootstrap-sass/assets'
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
