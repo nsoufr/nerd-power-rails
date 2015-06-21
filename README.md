@@ -12,7 +12,7 @@ Social Network for nerds and geeks.
 3. Go to `localhost:3000`
 
 ## MVP Features
-- [ ] Twitter-like following system;
+- [x] Twitter-like following system;
 - [ ] Feed page;
 - [ ] Profile page;
 - [ ] Markdown posts;
