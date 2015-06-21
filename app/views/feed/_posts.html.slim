@@ -11,24 +11,28 @@
 
 .row.section
   .posts-wrapper.col-sm-12.col-xs-12
-    - (0..3).each do 
+    - (0..3).each do
       .post-cards.col-xs-12
         .post-header
           .user-info
-            .avatar.col-xs-3
-              img.img-responsive.img-circle src="http://graph.facebook.com/nandosousafr/picture"
+            span.avatar
+              = image_tag 'avatar.jpg', class: 'img-rounded'
             .name
-              span Nando Sousa
-        .post-body.col-xs-12
-          We are part of this universe; we are in this universe, but perhaps more 
-          important than both of those facts, is that the universe is in us. 
+              = link_to  'Nando Sousa'
+
+            span.small
+              = link_to '12 jun'
+
+        .post-body
+          We are part of this universe; we are in this universe, but perhaps more
+          important than both of those facts, is that the universe is in us.
           Neil DeGrasse Tyson. #cosmos #universe #truth
         .post-insights.text-right
           = link_to 'javascript:void(0)' do
-            | 20 
+            | 20
             i.glyphicon.glyphicon-thumbs-up
 
-          = link_to 'javascript:void(0)' do 
-            | 3 
+          = link_to 'javascript:void(0)' do
+            | 3
             i.glyphicon.glyphicon-comment
 

@@ -12,4 +12,11 @@ html
   body.has-docked-nav
     = render 'layouts/header'
     .container
-      = yield
+      #sidebar.hidden-xs.hidden-sm.col-md-2
+        .user-avatar.col-md-12.row
+          = image_tag 'avatar.jpg', height: 130, width: 130, class: 'img-rounded'
+        .user.info.row.text-center
+          h3 @nando
+
+      #content.col-xs-12.col-md-7
+        = yield

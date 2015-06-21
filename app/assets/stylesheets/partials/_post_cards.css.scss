@@ -4,9 +4,19 @@
   margin-bottom: 0.5em;
 
   .post-header {
-    margin-bottom: 2.5em;
-  }
+    height: 4.5em;
 
+    .user-info .avatar {
+      float: left;
+      width: 55px;
+
+      img {
+        height: 50px;
+        width: 50px;
+      }
+    }
+
+  }
   .post-body, .post-insights > a {
     font-size: 0.89em;
   }
