@@ -5,8 +5,8 @@ class User < ActiveRecord::Base
   has_many :followers, through: :follows_followers
   has_many :following, through: :follows_following
 
-  validates_presence_of   :screen_name, :name
-  validates_uniqueness_of :screen_name
+  validates :screen_name, presence: true, uniqueness: true
+  validates :name, presence: true
 
   def follow!(user_to_follow)
     follows_following.create!(following_id: user_to_follow.id)

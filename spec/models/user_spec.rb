@@ -23,6 +23,5 @@ RSpec.describe User, type: :model do
       user_a.unfollow!(user_b)
       expect(user_a.following).not_to include(user_b)
     end
-
   end
 end
